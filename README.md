@@ -28,7 +28,7 @@ Why do we use it?
    editors now use Lorem Ipsum as their default model text
    ```
 
- <a name="anchor1"></a>
+<a name="anchor1"></a>
 ### Where does it come from?
 
 *Contrary* to ***popular*** **belief** ~~Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC~~ 
