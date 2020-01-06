@@ -2,6 +2,8 @@
 
 This is a test.
 
+Resistance is futile.
+
 ## What is Lorem Ipsum?
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
