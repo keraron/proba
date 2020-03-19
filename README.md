@@ -1,6 +1,6 @@
 # Coloured territories for Backstabbr:
 
-1. Add the Tapermonkey browser extension
+1. Add the [Tapermonkey](https://www.tampermonkey.net/) browser extension
 2. Create a new script for Backtabbr
 3. Paste the following and save the script:
 
