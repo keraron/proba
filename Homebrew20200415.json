@@ -1,0 +1,3586 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Aradia",
+				"abbreviation": "HMBR",
+				"full": "Homebrew",
+				"url": "",
+				"authors": [
+					"pella"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1586960991,
+		"dateLastModified": 1586960991
+	},
+	"monster": [
+		{
+			"name": "Aradia, Queen of Shadows, the Foul Mother",
+			"shortName": "Aradia",
+			"isNamedCreature": true,
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"vampire shapechanger"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 72",
+				"average": 153
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 60,
+					"condition": "using Wings of Flying"
+				},
+				"canHover": false
+			},
+			"str": 20,
+			"dex": 18,
+			"con": 18,
+			"int": 15,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"wis": "+7",
+				"cha": "+9",
+				"dex": "+9"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+9",
+				"arcana": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"cold",
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Elvish"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Aradia is a 11th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). She has the following sorcerer spells prepared:"
+					],
+					"daily": {
+						"1e": [
+							"{@spell scrying|PHB}",
+							"{@spell sending|PHB}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell infestation|XGE}",
+								"{@spell mage hand|PHB}",
+								"{@spell prestidigitation|PHB}",
+								"{@spell ray of frost|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell comprehend languages|PHB}",
+								"{@spell ray of sickness|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell darkness|PHB} (can be cast for 2 sorcery points, does not affect Aradia)",
+								"{@spell detect thoughts|PHB}",
+								"{@spell mirror image|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell|PHB}",
+								"{@spell sleet storm|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight|PHB}",
+								"{@spell greater invisibility|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects|PHB}",
+								"{@spell telekinesis|PHB}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate|PHB}",
+								"{@spell mental prison|XGE}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"If Aradia isn't in sunlight or running water, it can use its action to polymorph into a Tiny raven or a Medium cloud of mist, or back into its true form.",
+						"While in raven form, Aradia can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.",
+						"While in mist form, Aradia can't take any actions, speak, or manipulate objects. she is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"Aradia fails a saving throw, she can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Misty Escape (Vampire)",
+					"entries": [
+						"When she drops to 0 hit points outside its resting place, Aradia transforms into a cloud of mist (as in the Shapechanger trait) instead of falling {@condition unconscious}, provided that she isn't in sunlight or running water. If she can't transform, she is destroyed.",
+						"While she has 0 hit points in mist form, she can't revert to her vampire form, and she must reach her resting place within 2 hours or be destroyed. Once in her resting place, she reverts to her vampire form. She is then {@condition paralyzed} until she regains at least 1 hit point. After spending 1 hour in her resting place with 0 hit points, she regains 1 hit point."
+					]
+				},
+				{
+					"name": "Regeneration (Vampire)",
+					"entries": [
+						"Aradia regains 20 hit points at the start of her turn if she has at least 1 hit point and isn't in sunlight or running water. If Aradia takes radiant damage or damage from holy water, this trait doesn't function at the start of her next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Aradia can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Vampire Weakness (Vampire)",
+					"entries": [
+						"Aradia has the following flaws:",
+						"{@i Forbiddance}. Aradia can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water}. Aradia takes 20 acid damage if it ends its turn in running water.",
+						"{@i Stake to the Heart}. If a piercing weapon made of wood is driven into Aradia's heart while the she is {@condition incapacitated} in its resting place, Aradia is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity}. Aradia takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				},
+				{
+					"name": "Wings of Flying",
+					"entries": [
+						"While wearing her raven feathered cloak, Aradia can use an action to speak the command word. This turns the cloak into a pair of black bird wings on her back for 1 hour or until she repeats the command word as an action. The wings give her a flying speed of 60 feet. When they disappear, she can't use them again for {@dice 1d12} hours."
+					]
+				},
+				{
+					"name": "Sorcery Points",
+					"entries": [
+						"Aradia has 11 sorcery points. She regains all her spent sorcery points when it finishes a long rest. She can spend her sorcery points on the following options:",
+						"Empowered Spell: When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls. You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.",
+						"Heightened Spell: When it casts a spell that forces a creature to a saving throw to resist the spell's effects, Aradia can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw against the spell.",
+						"Twinned Spell: When Aradia casts a spell that targets only one creature and doesn't have a range of self, she can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip)."
+					]
+				},
+				{
+					"name": "Strength of the Grave (Once /day)",
+					"entries": [
+						"When damage reduces Aradia to 0 hit points, she can make a Charisma saving throw ({@dc 5} + the damage taken). On a success, she instead drops to 1 hit point."
+					]
+				},
+				{
+					"name": "Hound of Ill Omen",
+					"entries": [
+						"As a bonus action, Aradia can spend 3 sorcery points to magically summon a hound of ill omen to target one creature you can see within 120 feet of you. The hound uses the dire wolf's statistics (see the Monster Manual or appendix C in the Player's Handbook), with the following changes:",
+						"- It appears with a 5 temporary hit points.",
+						"- It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.",
+						"- At the start of its turn, the hound automatically knows its target's location. If the target was hidden, it is no longer hidden from the hound.",
+						"The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Vampire From Only)",
+					"entries": [
+						"Aradia makes two attacks, only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Rime (Lance)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d12 + 5}) piercing damage, plus 7 ({@damage 2d6}) cold damage. Creature's hit with it have their movement speed halved until the end of their next turn."
+					]
+				},
+				{
+					"name": "Unarmed Strike (Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 5}) slashing damage, plus 14 ({@damage 4d6}) necrotic damage. If the target is a creature, Strahd can grapple it (escape {@dc 18}) instead of dealing the bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bite (Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by Aradia, {@condition incapacitated}, or {@condition restrained}. {@h}8 ({@damage 1d6 + 5}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Aradia regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under Aradia's control. "
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"Aradia targets one humanoid she can see within 30 feet of her. If the target can see  Aradia, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed}. The {@condition charmed} target regards Aradia as a trusted friend to be heeded and protected. The target isn't under Aradia's control, but it takes Aradia's requests and actions in the most favorable way and lets Aradia bite it.",
+						"Each time Aradia or his companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until Aradia is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+					]
+				},
+				{
+					"name": "Children of the Night (1/Day)",
+					"entries": [
+						"Aradia magically calls {@dice 2d4} swarms of ravens or swarms of rats, provided that the sun isn't up. While outdoors, Aradia can call {@dice 3d6} wolves instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of Aradia and obeying her spoken commands. The beasts remain for 1 hour, until Aradia dies, or until she dismisses them as a bonus action."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Aradia can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Aradia regains spent legendary actions at the start of her turn."
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Aradia moves up to her speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"Aradia makes one unarmed strike."
+					]
+				},
+				{
+					"name": "Bite (Costs 2 Actions)",
+					"entries": [
+						"Aradia makes one bite attack."
+					]
+				},
+				{
+					"name": "Cast a Spell",
+					"entries": [
+						"Aradia can cast spells at levels equal to the expanded legendary actions (ie. 1 action for first level, 2 actions for second level)."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Vampire",
+				"source": "MM"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Shapechanger",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E"
+			],
+			"damageTags": [
+				"C",
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflicted": [
+				"charmed"
+			],
+			"uniqueId": "077edd11431dd90d8cb8dc32d648e690"
+		},
+		{
+			"name": "Karl Hanly",
+			"shortName": "Karl",
+			"isNpc": true,
+			"source": "Aradia",
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "10d6 + 28",
+				"average": 63
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 19,
+			"wis": 15,
+			"cha": 11,
+			"save": {
+				"int": "+9",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"history": "+9"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Elvish"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Karl is a 11th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). Karl has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"Known spells:",
+						"Absorb Elements, Catapult, Detect Magic, Expeditious Retreat, Feather Fall, Fog Cloud, Grease, Identify, Mage Armor, Magic Missle",
+						"Arcane Lock, Blindness/Deafness, Darkness, Darkvision, Hold Person, Invisibility, Locate Object, Melf's Acid Arrow",
+						"Animate Dead, Dispel Magic, Fireball, Fly, Glyph of Warding, Haste, Sending, Sleet Storm",
+						"Banishment, Dimension Door, Greater Invisibility, Ice Storm, Leomund's Secret Chest, Polymorph, Wall of Fire",
+						"Cone of Cold, Seeming, Teleportation Circle",
+						"Create Undead, Flesh to Stone"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell minor illusion|PHB}",
+								"{@spell prestidigitation}",
+								"{@spell toll the dead|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell identify|PHB}",
+								"{@spell mage armor|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell melf's acid arrow|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead|PHB}",
+								"{@spell dispel magic|PHB}",
+								"{@spell fireball|PHB}",
+								"{@spell fly|PHB}",
+								"{@spell sending|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment|PHB}",
+								"{@spell greater invisibility|PHB}",
+								"{@spell polymorph|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell seeming|PHB}",
+								"{@spell teleportation circle|PHB}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell flesh to stone|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Activate Ioun Stone of Mastery",
+					"entries": [
+						"Your proficiency bonus increases by 1 while this pale green prism orbits your head.",
+						"When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of {@dice 1d3} feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful {@dc 24} Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
+						"A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head."
+					]
+				},
+				{
+					"name": "Wand of Binding",
+					"entries": [
+						"This wand has 7 charges for the following properties.",
+						"Spells. While holding the wand, you can use an action to expend some of its charges to cast one of the following spells (save {@dc 17}): {@spell hold monster|PHB} (5 charges) or {@spell hold person|PHB} (2 charges).",
+						"Assisted Escape. While holding the wand, you can use your reaction to expend 1 charge and gain advantage on a saving throw you make to avoid being {@condition paralyzed} or {@condition restrained}, or you can expend 1 charge and gain advantage on any check you make to escape a grapple."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"uniqueId": "c7cab72a6c4526700504a4ea514819d9"
+		},
+		{
+			"name": "Turgon",
+			"source": "Aradia",
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				14,
+				{
+					"ac": 17,
+					"condition": "when bladesinging",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40 when bladesinging)"
+				}
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 14,
+			"int": 16,
+			"wis": 12,
+			"cha": 9,
+			"save": {
+				"int": "+7",
+				"dex": "+8"
+			},
+			"skill": {
+				"perception": "+9",
+				"stealth": "+12",
+				"acrobatics": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Thieves' cant"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Turgon is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). He has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell disguise self|PHB}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell rope trick|PHB}",
+								"{@spell shadow blade|XGE}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell catnap|XGE}",
+								"{@spell counterspell}",
+								"{@spell nondetection|PHB}",
+								"{@spell vampiric touch|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"Turgon can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, Turgon has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Turgon scores against a surprised creature is a critical hit."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/turn)",
+					"entries": [
+						"Once per turn, Turgon deals an extra 7 ({@damage 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Turgon that isn't {@condition incapacitated} and Turgon doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Bladesong",
+					"entries": [
+						"As a bonus action, Turgon invokes bladesinging. While ding so, his AC is increased by 3, his speed increased by 10, has advantage on Dexterity (Acrobatics) checks, has +3 bonus to concentration checks."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Turgon has advantage on saving throws against being {@condition charmed}, and magic can't put the turgon to sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Turgon makes two melee attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"TC"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"uniqueId": "936de95910476baf09929ae45abe076d"
+		},
+		{
+			"name": "Tara One-Eye",
+			"shortName": "Tare",
+			"source": "Aradia",
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 11,
+			"dex": 20,
+			"con": 14,
+			"int": 15,
+			"wis": 13,
+			"cha": 8,
+			"save": {
+				"dex": "+9",
+				"int": "+6"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"deception": "+3",
+				"perception": "+5",
+				"stealth": "+13"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"trait": [
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During her first turn, Tara has advantage on attack rolls against any creature that hasn't taken a turn. Any hit she scores against a surprised creature is a critical hit."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If Tara is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"Tara deals an extra 17 ({@damage 5d6}) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of her that isn't {@condition incapacitated} and she doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Sharpshooter",
+					"entries": [
+						"Attacking at long range doesn't impose disadvantage on her ranged weapon attack rolls.",
+						"Tara's ranged weapon attacks ignore half cover and three-quarters cover.",
+						"Before she makes an attack with a ranged weapon, Tara can choose to take a -5 penalty to the attack roll. If the attack hits, she adds +10 to the attack's damage."
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Tara can take the {@action Dodge}, {@action Disengage}, or {@action Hide} action as a bonus action on each of her turns."
+					]
+				},
+				{
+					"name": "Fighting Style: Archery",
+					"entries": [
+						"Tara has +2 bonus to ranged weapon attacks."
+					]
+				},
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"Tara can use her reaction to halve the attack's damage against her."
+					]
+				},
+				{
+					"name": "Archer's Eye (3/day)",
+					"entries": [
+						"As a bonus action, Tara can add {@dice 1d10} to its next attack or damage roll with a crossbow."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Marksman Crossbow (+2)",
+					"entries": [
+						"{@atk rw} {@hit 13} to hit, range 200/500 ft. minimum range 50 ft., one target. {@h}15 ({@damage 2d8 + 7}) damage.",
+						"With Sharpshooter: {@atk rw} {@hit 8} to hit, range 200/500 ft., one target. {@h}25 ({@damage 2d8 + 17}) damage.",
+						"Can only be used if Tara hasn't moved this turn."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 30/120 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage."
+					]
+				}
+			],
+			"altArt": [
+				{
+					"name": "Vistana Assassin",
+					"source": "CoS"
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"uniqueId": "175a36d423738bb955b9db56145be9a1"
+		},
+		{
+			"name": "Vivienne Lodd",
+			"shortName": "Vivienne",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb} and {@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"str": "+9",
+				"con": "+7"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+6",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Indomitable (1/Day)",
+					"entries": [
+						"Vivienne rerolls a failed saving throw."
+					]
+				},
+				{
+					"name": "Fighting Spirit (3/day)",
+					"entries": [
+						"As a bonus action Vivienne give herself advantage on weapon attack rolls until the end of the current turn. She also gains 10 temporary hit points."
+					]
+				},
+				{
+					"name": "Animated Shield",
+					"entries": [
+						"While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are {@condition incapacitated} or die, at which point the shield falls to the ground or into your hand if you have one free."
+					]
+				},
+				{
+					"name": "Inspiring Leader",
+					"entries": [
+						"+12 temp HP to up to six creatures. (takes 10 min)"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Vivienne makes three attacks with her ."
+					]
+				},
+				{
+					"name": "Pathfinder's Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) damage, or 11 ({@damage 1d10 + 8}) damage if used with both hands.",
+						"When you wield this +1 greataxe, you always know the way to the nearest passage leading from underground toward the surface, as well as the approximate depth the hammer is underground."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"urban"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "a98e3547bb8f9070cfe2ff6dc39d9d45"
+		},
+		{
+			"name": "Inquisitor Lieutenant",
+			"source": "Aradia",
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 9",
+				"average": 49
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 18,
+			"wis": 15,
+			"cha": 11,
+			"save": {
+				"int": "+8",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+8",
+				"perception": "+6",
+				"investigation": "+8",
+				"insight": "+10"
+			},
+			"passive": 16,
+			"languages": [
+				"any four languages"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The mage has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell sleep|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell darkvision|PHB}",
+								"{@spell detect thoughts|PHB}",
+								"{@spell hold person|PHB}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic|PHB}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell polymorph|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell wall of force|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Power Surge",
+					"entries": [
+						"When the Inquisitor Lieutenant casts a spell that deals damage, they can expend a power surge and add an additional {@dice d10} to it's damage.",
+						"When the Inquisitor Lieutenant cancels a spell or effect with dispel or counterspell, they gain a surge. It resets to one on a long rest."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Silver Manacles",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. On a hit, target creature is {@condition restrained}. Additionally if target creature attempts to cast a spell, it must succeed on a DC25 save with their spellcasting ability, or the spell has no effect and take X{@damage d12} psychic damage where X is the level of the spell cast.",
+						"To break the manacles, the target must make a DC30 strength check. The manacles have AC16, 30HP, and immunity against non-magical damage, and psychic damage."
+					]
+				}
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "d6ce97d7216a2277f667c1849cc28adf"
+		},
+		{
+			"name": "Inquisitor Examiner",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor|phb}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 15,
+			"con": 12,
+			"int": 18,
+			"wis": 14,
+			"cha": 11,
+			"skill": {
+				"arcana": "+7",
+				"investigation": "+7",
+				"perception": "+5",
+				"insight": "+8"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Elvish"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The apprentice is a 6st-level spellcaster. Their spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light|PHB}",
+								"{@spell mage hand|PHB}",
+								"{@spell message|PHB}",
+								"{@spell ray of frost|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell detect magic|PHB}",
+								"{@spell mage armor|PHB}",
+								"{@spell witch bolt|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness|PHB}",
+								"{@spell detect thoughts|PHB}",
+								"{@spell hold person|PHB}",
+								"{@spell mind spike|XGE}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell|PHB}",
+								"{@spell vampiric touch|PHB}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Power Surge",
+					"entries": [
+						"When the Inquisitor Examiner casts a spell that deals damage, they can expend a power surge and add an additional {@dice d6} to it's damage.",
+						"When the Inquisitor Examiner cancels a spell or effect with dispel or counterspell, they gain a surge. It resets to one on a long rest."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 2} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+					]
+				},
+				{
+					"name": "Silver Manacles",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. On a hit, target creature is {@condition restrained}. Additionally if target creature attempts to cast a spell, it must succeed on a DC25 save with their spellcasting ability, or the spell has no effect and take X{@damage d12} psychic damage where X is the level of the spell cast.",
+						"To break the manacles, the target must make a DC30 strength check. The manacles have AC16, 30HP, and immunity against non-magical damage, and psychic damage."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"uniqueId": "52e179df2964446fbf9cd984beffb14b"
+		},
+		{
+			"name": "Inquisitor Apprentice",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 16,
+			"wis": 14,
+			"cha": 11,
+			"skill": {
+				"arcana": "+5",
+				"investigation": "+5",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The apprentice is a 3th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light|PHB}",
+								"{@spell mage hand}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell flaming sphere|PHB}",
+								"{@spell melf's acid arrow|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "d0ef98634887e3a04ab53ac29b396531"
+		},
+		{
+			"name": "Inquisitor Seeker",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item breastplate|phb} and defence"
+					]
+				},
+				{
+					"ac": 22,
+					"condition": "with shield"
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 14,
+			"int": 17,
+			"wis": 13,
+			"cha": 8,
+			"save": {
+				"int": "+7",
+				"wis": "+5",
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+5",
+				"insight": "+5",
+				"athletics": "+7",
+				"stealth": "+6"
+			},
+			"passive": 15,
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The seeker is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, +8 to hit with spell attacks). The seeker has the following spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell dancing lights|PHB}",
+								"{@spell mage hand|PHB}",
+								"{@spell message|PHB}",
+								"{@spell ray of frost|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell cure wounds|PHB}",
+								"{@spell hunter's mark|PHB}",
+								"{@spell shield|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blur|PHB}",
+								"{@spell darkvision|PHB}",
+								"{@spell lesser restoration|PHB}",
+								"{@spell pass without trace|PHB}",
+								"{@spell scorching ray|PHB}"
+							],
+							"slots": 4
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell|PHB}",
+								"{@spell fireball|PHB}",
+								"{@spell vampiric touch|PHB}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The inquisitor seeker has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Colossus Slayer (1/turn)",
+					"entries": [
+						"When it hits with a weapon attack, the Inquisitor Seeker deals an additional {@damage 1d8} damage to creatures below their maximum HP."
+					]
+				},
+				{
+					"name": "Power Surge",
+					"entries": [
+						"When the Inquisitor Seeker casts a spell that deals damage, they can expend a power surge and add an additional {@dice d6} to it's damage.",
+						"When the Inquisitor Seeker cancels a spell or effect with dispel or counterspell, they gain a surge. It resets to one on a long rest."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Inquisitor Seeker makes two melee attacks with its longsword."
+					]
+				},
+				{
+					"name": "Inquisitor's Sword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage.",
+						"On a hit, the target must make a {@dc 13} Wisdom saving throw, or it is unable to cast spells until the start of the Inquisitor Seeker's next turn"
+					]
+				},
+				{
+					"name": "Silver Manacles",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. On a hit, target creature is {@condition restrained}. Additionally if target creature attempts to cast a spell, it must succeed on a DC25 save with their spellcasting ability, or the spell has no effect and take X{@damage d12} psychic damage where X is the level of the spell cast.",
+						"To break the manacles, the target must make a DC30 strength check. The manacles have AC16, 30HP, and immunity against non-magical damage, and psychic damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "9d6805437d593814a20102d84d19b199"
+		},
+		{
+			"name": "Beryl Apprentice",
+			"source": "Aradia",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d6 + 10"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 7,
+			"dex": 15,
+			"con": 14,
+			"int": 10,
+			"wis": 9,
+			"cha": 16,
+			"skill": {
+				"arcana": "+2",
+				"medicine": "+1"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The apprentice is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell mending}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell chaos bolt|XGE}",
+								"{@spell expeditious retreat|PHB}",
+								"{@spell shield|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell scorching ray}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Sorcery Points",
+					"entries": [
+						"The apprentice has 3 sorcery points. It regains all its spent sorcery points when it finishes a long rest. It can spend its sorcery points on the following options:",
+						"Quickened Spell: When The apprentice casts a spell that has a casting time of 1 action, she can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.",
+						"Subtle Spell: When The apprentice casts a spell, it can spend 1 sorcery point to cast the spell without any somatic or verbal components."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Wand of Fireballs",
+					"entries": [
+						"7 charges, 1 charge = lvl 3 spell"
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "b24b19799074fcab727ecf9a6b66e002"
+		},
+		{
+			"name": "Elsa Godel",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@spell mage armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"special": "53 (45 + 8 temp)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 17,
+			"con": 14,
+			"int": 13,
+			"wis": 9,
+			"cha": 18,
+			"save": {
+				"wis": "+2",
+				"cha": "+7"
+			},
+			"skill": {
+				"athletics": "+3",
+				"deception": "+7",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"Common",
+				"telepathy (30ft)"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Pact Magic",
+					"headerEntries": [
+						"Elsa is a 7th level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). She regains her expended spell slots when she finishes a short or long rest. She knows the following warlock spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast|PHB}",
+								"{@spell mage hand|PHB}",
+								"{@spell shocking grasp|PHB}"
+							]
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment|PHB}",
+								"{@spell blight|PHB}",
+								"{@spell charm person|PHB}",
+								"{@spell darkness|PHB}",
+								"{@spell detect thoughts|PHB}",
+								"{@spell hex|PHB}",
+								"{@spell thunder step|XGE}",
+								"{@spell vampiric touch|PHB}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Whispering Aura",
+					"entries": [
+						"At the start of each of the Elsa's turns, each creature of its choice within 5 feet of it must succeed on a {@dc 15} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage, provided that Elsa isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Elsa makes two melee attacks with her pact weapon."
+					]
+				},
+				{
+					"name": "Pact Weapon {@item Frost Brand Scimitar|dmg}",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing +3 ({@damage 1d6}) cold damage."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"damageTags": [
+				"C",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "a2c62418e3352b329c1b99bf384b64d3"
+		},
+		{
+			"name": "Hilda Mareth",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				13,
+				{
+					"ac": 16,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 14,
+			"int": 18,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+8",
+				"history": "+8"
+			},
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Halfling",
+				"Dwarven",
+				"Elvish"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The abjurer is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The abjurer has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"*Abjuration spell of 1st level or higher"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell dancing lights}",
+								"{@spell mending}",
+								"{@spell message}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell mage armor}*",
+								"{@spell magic missile}",
+								"{@spell shield}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell darkness|PHB}",
+								"{@spell invisibility}",
+								"{@spell scorching ray|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}*",
+								"{@spell dispel magic}*",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}*",
+								"{@spell polymorph|PHB}",
+								"{@spell stoneskin}*"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell wall of force}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Arcane Ward",
+					"entries": [
+						"Hilda has a magical ward that has 24 hit points. Whenever she takes damage, the ward takes the damage instead. If the ward is reduced to 0 hit points, the abjurer takes any remaining damage. When the abjurer casts an abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell.",
+						"When a creature within 30ft takes damage, Hilda can use her reaction to cause the ward to absorb the damage."
+					]
+				},
+				{
+					"name": "Improved Abjuration",
+					"entries": [
+						"Hilda adds her proficiency modifier to any ability check that is required by an abjuration spell."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"H"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"uniqueId": "5d9e63d84fd5ec24c9ef794f65db74ac"
+		},
+		{
+			"name": "Glory",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Tiefling"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb} and {@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 40",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 18,
+			"int": 11,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"wis": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"athletics": "+8",
+				"deception": "+6",
+				"intimidation": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Infernal"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Golry is a 10th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following paladin spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell compelled duel|PHB}",
+								"{@spell cure wounds|PHB}",
+								"{@spell thunderous smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell branding smite}",
+								"{@spell lesser restoration|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell aura of vitality|PHB}",
+								"{@spell blinding smite}"
+							],
+							"slots": 2
+						}
+					},
+					"daily": {
+						"1e": [
+							"{@spell branding smite|PHB}",
+							"{@spell searing smite|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of Protection",
+					"entries": [
+						"Allied creatures within 10 ft. have +2 bonus to saving throws"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Glory makes two attacks with her longsword."
+					]
+				},
+				{
+					"name": "Lifedrinker Longsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage.",
+						"On a natural 19 or 20 the Lifedrinker deals additional {@damage 3d6} necrotic damage and Glory gains the same as temporary HP.",
+						"Smite:{@damage  + 2d8} radiant damage for expanded spellslot"
+					]
+				},
+				{
+					"name": "Sacred Weapon (Recharges after a Short or Long Rest)",
+					"entries": [
+						"For 1 minute, Glory adds +2 to attack rolls made with her longsword. The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Protection",
+					"entries": [
+						"If an ally within 5ft is targeted, Glory can use her reaction to impose disadvantage on the attack roll."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"I"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"uniqueId": "77150fcc92ab9f6b98700cd17ae21b7d"
+		},
+		{
+			"name": "King Yndar",
+			"source": "Aradia",
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item dwarven plate|dmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 26",
+				"average": 84
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 8,
+			"save": {
+				"wis": "+4",
+				"str": "+7"
+			},
+			"skill": {
+				"athletics": "+7",
+				"persuasion": "+2"
+			},
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Dwarven"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Yndar has advantage on saving throws against spells and other magical effects (Mantle of Spell Resistance)."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"Yndar has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Martial Advantage",
+					"entries": [
+						"Once per turn, Yndar can deal an extra 7 ({@damage 2d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of him that isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Relentless",
+					"entries": [
+						"If Yndar takes 14 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Maneuvers",
+					"entries": [
+						"Superiority dice: 5 {@dice d8}/rest",
+						"Precision Attack: When Yndar makes a weapon attack roll against a creature, he can expend one superiority die to add it to the roll.",
+						"Riposte: When a creature misses Yndar with a melee attack, he can use his reaction and expend one superiority die to make a melee weapon attack against the creature. If he hits, he adds the superiority die to the attack's damage roll.",
+						"Trip Attack: When Yndar hits a creature with a weapon attack, he can expend one superiority die to attempt to knock the target down. He adds the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, he knocks the target {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Yndar makes two melee attacks."
+					]
+				},
+				{
+					"name": "Giant Slayer Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage.",
+						"When Yndar hits a giant with it, the giant takes an extra {@damage 2d6} damage of the weapon's type and must succeed on a {@dc 15} Strength saving throw or fall {@condition prone}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Yndar adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "470a0c405aecbf2d45921db75292b330"
+		},
+		{
+			"name": "Rufus Azlan",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 38,
+				"formula": "7d8 + 7"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 13,
+			"int": 18,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"int": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"deception": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Thieves' cant"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The illusionist is a 7th-level spellcaster. its spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The illusionist has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"*Illusion spell of 1st level or higher"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell dancing lights}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell color spray}*",
+								"{@spell disguise self}*",
+								"{@spell mage armor}",
+								"{@spell silent image|PHB}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}*",
+								"{@spell maximilian's earthen grasp|XGE}",
+								"{@spell scorching ray|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell|PHB}",
+								"{@spell lightning bolt|PHB}",
+								"{@spell thunder step|XGE}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Displacement (Recharges after the Illusionist Casts an Illusion Spell of 1st Level or Higher)",
+					"entries": [
+						"As a bonus action, the illusionist projects an illusion that makes the illusionist appear to be standing in a place a few inches from its actual location, causing any creature to have disadvantage on attack rolls against the illusionist. The effect ends if the illusionist takes damage, it is {@condition incapacitated}, or its speed becomes 0."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Wand of Paralysis",
+					"entries": [
+						"7 charges",
+						"1 charge: target creature within 60ft. must make a DC15 CON save or be {@condition paralyzed} for 1 minute. Target creature can repeat the save at the end of it's turn."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"TC"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"uniqueId": "ff152e3ca8d387f31c7fae6f68a04bdc"
+		},
+		{
+			"name": "Beryl Thug",
+			"source": "Aradia",
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 32,
+				"formula": "5d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"skill": {
+				"intimidation": "+3"
+			},
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The thug makes two melee attacks."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d10 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 100/400 ft., one target. {@h}5 ({@damage 1d10 + 1}) piercing damage."
+					]
+				}
+			],
+			"altArt": [
+				{
+					"name": "Vistana Thug",
+					"source": "CoS"
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"uniqueId": "f4e12a7ef986f58f0678fd6a4ce33820"
+		},
+		{
+			"name": "Beryl Scout",
+			"source": "Aradia",
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 8",
+				"average": 30
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+6"
+			},
+			"passive": 14,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Sneak Attack (Assassin)",
+					"entries": [
+						"Once per turn, the Beryl scout deals an extra 7 ({@damage 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the beryl scout that isn't {@condition incapacitated} and the beryl scout doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The scout makes two melee attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Heavy crossbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, ranged 150/600 ft., one target. {@h}6 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflicted": [
+				"incapacitated"
+			],
+			"uniqueId": "2d6082860614d5846728490c184cf88c"
+		},
+		{
+			"name": "Desert Worm",
+			"source": "Aradia",
+			"size": "H",
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d20 + 60",
+				"average": 165
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 30
+			},
+			"str": 23,
+			"dex": 7,
+			"con": 22,
+			"int": 1,
+			"wis": 8,
+			"cha": 4,
+			"save": {
+				"con": "+11",
+				"wis": "+4"
+			},
+			"senses": [
+				"blindsight 30 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 9,
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The worm makes two attacks: one with its bite and one with its stinger."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d8 + 6}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 17} Dexterity saving throw or be swallowed by the worm. A swallowed creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the worm, and it takes 14 ({@damage 4d6}) acid damage at the start of each of the worm's turns.",
+						"If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail Stinger",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one creature. {@h}13 ({@damage 2d6 + 6}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 21 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/PotA/Young Purple Worm.png?v=1.102.2",
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			],
+			"uniqueId": "85dcf6c00ba59af17d8934aee0a1b206"
+		},
+		{
+			"name": "Udu-Eshu's Mummy",
+			"source": "Aradia",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 97,
+				"formula": "13d8 + 39"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 17,
+			"int": 11,
+			"wis": 18,
+			"cha": 16,
+			"save": {
+				"con": "+7",
+				"int": "+4",
+				"wis": "+8",
+				"cha": "+7"
+			},
+			"skill": {
+				"history": "+4",
+				"religion": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"necrotic",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": {
+				"cr": "15",
+				"lair": "16"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The mummy lord is a 8th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The mummy lord has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell guiding bolt}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell silence}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell dispel magic}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell divination}",
+								"{@spell guardian of faith}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell contagion}",
+								"{@spell insect plague}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The mummy lord has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"A destroyed mummy lord gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of the mummy lord's heart."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mummy can use its Dreadful Glare and makes one attack with its rotting fist."
+					]
+				},
+				{
+					"name": "Rotting Fist",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) bludgeoning damage plus 14 ({@damage 4d6}) necrotic damage. If the target is a creature, it must succeed on a {@dc 15} Constitution saving throw or be cursed with mummy rot.",
+						"The cursed target can't regain hit points, and its hit point maximum decreases by 10 ({@dice 3d6}) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the {@spell remove curse} spell or other magic."
+					]
+				},
+				{
+					"name": "Dreadful Glare",
+					"entries": [
+						"The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a {@dc 15} Wisdom saving throw against this magic or become {@condition frightened} until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also {@condition paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies and mummy lords for the next 24 hours."
+					]
+				},
+				{
+					"name": "Staff of Swarming Insects",
+					"entries": [
+						"The staff has 10 charges",
+						"Spells.",
+						"While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC: {@spell giant insect} (4 charges) or {@spell insect plague} (5 charges).",
+						"Insect Cloud.",
+						"While holding the staff, you can use an action and expend 1 charge to cause a swarm of harmless flying insects to spread out in a 30-foot radius from you. The insects remain for 10 minutes, making the area heavily obscured for creatures other than you. The swarm moves with you, remaining centered on you. A wind of at least 10 miles per hour disperses the swarm and ends the effect."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The mummy lord makes one attack with its rotting fist or uses its Dreadful Glare."
+					]
+				},
+				{
+					"name": "Blinding Dust",
+					"entries": [
+						"Blinding dust and sand swirls magically around the mummy lord. Each creature within 5 feet of the mummy lord must succeed on a {@dc 16} Constitution saving throw or be {@condition blinded} until the end of the creature's next turn."
+					]
+				},
+				{
+					"name": "Blasphemous Word (Costs 2 Actions)",
+					"entries": [
+						"The mummy lord utters a blasphemous word. Each non-undead creature within 10 feet of the mummy lord that can hear the magical utterance must succeed on a {@dc 15} Constitution saving throw or be {@condition stunned} until the end of the mummy lord's next turn."
+					]
+				},
+				{
+					"name": "Channel Negative Energy (Costs 2 Actions)",
+					"entries": [
+						"The mummy lord magically unleashes negative energy. Creatures within 60 feet of the mummy lord, including ones behind barriers and around corners, can't regain hit points until the end of the mummy lord's next turn."
+					]
+				},
+				{
+					"name": "Whirlwind of Sand (Costs 2 Actions)",
+					"entries": [
+						"The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be {@condition grappled}, {@condition petrified}, knocked {@condition prone}, {@condition restrained}, or {@condition stunned}. Equipment worn or carried by the mummy lord remain in its possession."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Mummy Lord",
+				"source": "MM"
+			},
+			"environment": [
+				"desert"
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"paralyzed",
+				"stunned"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"uniqueId": "c986b3b9859213057bd5df6e0c0533f2"
+		},
+		{
+			"name": "Stronger Skeleton",
+			"source": "Aradia",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"armor scraps"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 6",
+				"average": 19
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 15,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it spoke in life but can't speak"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The stronger skeleton has advantage on an attack roll against a creature if at least one of the stronger skeleton's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated} ."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The skeleton makes two melee attacks"
+					]
+				},
+				{
+					"name": "Glaive",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"name": "Skeleton",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Skeletons arise when animated by dark magic. They heed the summons of spellcasters who call them from their stony tombs and ancient battlefields, or rise of their own accord in places saturated with death and loss, awakened by stirrings of necromantic energy or the presence of corrupting evil.",
+									{
+										"name": "Animated Dead",
+										"type": "entries",
+										"entries": [
+											"Whatever sinister force awakens a skeleton infuses its bones with a dark vitality, adhering joint to joint and reassembling dismantled limbs. This energy motivates a skeleton to move and think in a rudimentary fashion, though only as a pale imitation of the way it behaved in life. An animated skeleton retains no connection to its past, although resurrecting a skeleton restores it body and soul, banishing the hateful undead spirit that empowers it.",
+											"While most skeletons are the animated remains of dead humans and other humanoids, skeletal undead can be created from the bones of other creatures besides humanoids, giving rise to a host of terrifying and unique forms."
+										]
+									},
+									{
+										"name": "Obedient Servants",
+										"type": "entries",
+										"entries": [
+											"Skeletons raised by spell are bound to the will of their creator. They follow orders to the letter, never questioning the tasks their masters give them, regardless of the consequences. Because of their literal interpretation of commands and unwavering obedience, skeletons adapt poorly to changing circumstances. They can't read, speak, emote, or communicate in any way except to nod, shake their heads, or point. Still, skeletons are able to accomplish a variety of relatively complex tasks.",
+											"A skeleton can fight with weapons and wear armor, can load and fire a catapult or trebuchet, scale a siege ladder, form a shield wall, or dump boiling oil. However, it must receive careful instructions explaining how such tasks are accomplished.",
+											"Although they lack the intellect they possessed in life, skeletons aren't mindless. Rather than break its limbs attempting to batter its way through an iron door, a skeleton tries the handle first. If that doesn't work, it searches for another way through or around the obstacle."
+										]
+									},
+									{
+										"name": "Habitual Behaviors",
+										"type": "entries",
+										"entries": [
+											"Independent skeletons temporarily or permanently free of a master's control sometimes pantomime actions from their past lives, their bones echoing the rote behaviors of their former living selves. The skeleton of a miner might lift a pick and start chipping away at stone walls. The skeleton of a guard might strike up a post at a random doorway. The skeleton of a dragon might lie down on a pile of treasure, while the skeleton of a horse crops grass it can't eat. Left alone in a ballroom, the skeletons of nobles might continue an eternally unfinished dance.",
+											"When skeletons encounter living creatures, the necromantic energy that drives them compels them to kill unless they are commanded by their masters to refrain from doing so. They attack without mercy and fight until destroyed, for skeletons possess little sense of self and even less sense of self-preservation."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A skeleton doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Skeleton.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Skeleton.png?v=1.102.2",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/449/skeleton.mp3",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"uniqueId": "f784ed4178ea1087148ce853198b3011"
+		},
+		{
+			"name": "Wilfred Stronghorn",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 38,
+				"formula": "7d8 + 7"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 13,
+			"int": 16,
+			"wis": 11,
+			"cha": 12,
+			"save": {
+				"int": "+5",
+				"wis": "+2"
+			},
+			"skill": {
+				"arcana": "+5",
+				"history": "+5"
+			},
+			"passive": 10,
+			"languages": [
+				"any four languages"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The illusionist is a 7th-level spellcaster. its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The illusionist has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"*Illusion spell of 1st level or higher"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell dancing lights}",
+								"{@spell fire bolt|PHB}",
+								"{@spell mage hand}",
+								"{@spell message|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell feather fall|PHB}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell sleep|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}*",
+								"{@spell locate object|PHB}",
+								"{@spell web|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic|PHB}",
+								"{@spell remove curse|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell polymorph|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Displacement (Recharges after the Illusionist Casts an Illusion Spell of 1st Level or Higher)",
+					"entries": [
+						"As a bonus action, the illusionist projects an illusion that makes the illusionist appear to be standing in a place a few inches from its actual location, causing any creature to have disadvantage on attack rolls against the illusionist. The effect ends if the illusionist takes damage, it is {@condition incapacitated}, or its speed becomes 0."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) bludgeoning damage, or 3 ({@damage 1d8 - 1}) bludgeoning damage if used with two hands."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"name": "Illusionist",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Illusionists are specialist wizards who twist light, sound, shadow, and even minds to create false and quasi-real effects. They can be flamboyant and use their powers in spectacular and obvious ways, or quiet and subtle, using their magic to conceal the truth."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/VGM/Illusionist.png?v=1.102.3",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/285/illusionist.mp3",
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"frightened",
+				"invisible"
+			],
+			"uniqueId": "002ebeea0a7bad4133ece895cefd44e4"
+		},
+		{
+			"name": "Irena Stronghorn",
+			"source": "Aradia",
+			"page": 212,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+6",
+				"history": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"any four languages"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The conjurer is a 9th-level spellcaster. Its spellcasting ability is intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The conjurer has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"*Conjuration spell of 1st level or higher"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell mage hand}",
+								"{@spell poison spray}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell unseen servant}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell cloud of daggers}*",
+								"{@spell misty step}*",
+								"{@spell web}*"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fireball}",
+								"{@spell stinking cloud}*"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Evard's black tentacles}*"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Benign Transportation (Recharges after the Conjurer Casts a Conjuration Spell of 1st Level or Higher)",
+					"entries": [
+						"As a bonus action, the conjurer teleports up to 30 feet to an unoccupied space that it can see. If it instead chooses a space within range that is occupied by a willing Small or Medium creature, they both teleport, swapping places."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"name": "Conjurer",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Conjurers are specialist wizards who summon creatures from other planes and create materials out of thin air. Some conjurers use their magic to bolster armies or destroy enemies on battlefields, while others use summoned creatures to guard their lairs."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/VGM/Conjurer.png?v=1.102.3",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/97/conjurer.mp3",
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "c04d6831b112e216d7f0ff39e8fcd158"
+		},
+		{
+			"name": "Elsbeth Kyrell",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 15,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"arcana": "+4"
+			},
+			"passive": 11,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The apprentice is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell shield}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell blur}",
+								"{@spell scorching ray}"
+							]
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "1afc106131aea044a695b3738e9b2123"
+		},
+		{
+			"name": "Deathlock Cleric",
+			"source": "Aradia",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 0",
+				"average": 55
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 15,
+			"con": 10,
+			"int": 14,
+			"wis": 16,
+			"cha": 8,
+			"save": {
+				"int": "+5",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+5",
+				"history": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The deathlock's innate spellcasting ability is Charisma (spell save {@dc 10}). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell disguise self}",
+						"{@spell mage armor}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The deathlock is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following cleric spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell mage hand}",
+								"{@spell toll the dead|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bane|PHB}",
+								"{@spell false life|PHB}",
+								"{@spell inflict wounds|PHB}",
+								"{@spell ray of sickness|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness|PHB}",
+								"{@spell hold person|PHB}",
+								"{@spell ray of enfeeblement|PHB}",
+								"{@spell spiritual weapon|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic|PHB}",
+								"{@spell spirit guardians|PHB}",
+								"{@spell vampiric touch|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"The deathlock has advantage on saving throws against any effect that turns undead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Deathly Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) necrotic damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MTF/Deathlock.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MTF/Deathlock.png?v=1.102.7",
+			"traitTags": [
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N"
+			],
+			"spellcastingTags": [
+				"CC",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "bb48fb4f6bd72901533e587fd324bad7"
+		}
+	]
+}
