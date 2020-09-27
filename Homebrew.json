@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1600003746,
-		"dateLastModified": 1600003746
+		"dateAdded": 1601200498,
+		"dateLastModified": 1601200498
 	},
 	"monster": [
 		{
@@ -3945,33 +3945,6 @@
 			]
 		},
 		{
-			"name": "New Creature",
-			"source": "Aradia",
-			"size": "M",
-			"type": "aberration",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				10
-			],
-			"hp": {
-				"average": 4,
-				"formula": "1d8"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 10,
-			"con": 10,
-			"int": 10,
-			"wis": 10,
-			"cha": 10,
-			"passive": 10,
-			"cr": "0"
-		},
-		{
 			"name": "Fedyth Keetan",
 			"source": "Aradia",
 			"size": "M",
@@ -4296,6 +4269,30 @@
 					]
 				}
 			],
+			"legendaryHeader": [
+				"Duruq can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn."
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Scimitar",
+					"entries": [
+						"Duruq makes a scimitar attack."
+					]
+				},
+				{
+					"name": "Hurl Flame",
+					"entries": [
+						"Duruq makes hurl flame attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Duruq moves up to its speed without provoking opportunity attacks."
+					]
+				}
+			],
 			"environment": [
 				"desert"
 			],
@@ -4589,7 +4586,228 @@
 			]
 		},
 		{
-			"name": "Vyaala",
+			"name": "Hlin",
+			"shortName": "Hlin",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item plate armor|phb} and {@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 16,
+			"int": 11,
+			"wis": 20,
+			"cha": 9,
+			"save": {
+				"wis": "+9",
+				"con": "+7"
+			},
+			"skill": {
+				"arcana": "+8",
+				"perception": "+9",
+				"religion": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"fire",
+				"poison"
+			],
+			"languages": [
+				"common",
+				"dwarvish"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The priest is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell sacred flame}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell guiding bolt}",
+								"{@spell identify}",
+								"{@spell searing smite}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aid}",
+								"{@spell magic weapon}",
+								"{@spell silence}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell beacon of hope}",
+								"{@spell dispel magic}",
+								"{@spell meld into stone}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell freedom of movement}",
+								"{@spell guardian of faith}",
+								"{@spell stoneskin}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell dispel evil and good}",
+								"{@spell flame strike}",
+								"{@spell holy weapon|XGE}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Dwarven Thrower",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7}) bludgeoning plus 4 ({@damage 1d8}) fire damage.",
+						"Throwing range: 20/60, extra {@damage 1d8} damage"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"F"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Velyr (Dire Wilf)",
+			"source": "Aradia",
+			"size": "L",
+			"type": "beast",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 18",
+				"average": 51
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 6,
+			"wis": 14,
+			"cha": 7,
+			"skill": {
+				"perception": "+8",
+				"stealth": "+8"
+			},
+			"passive": 18,
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"Velyr has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"Velyr has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Velyr makes two melee attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Naellya",
 			"source": "Aradia",
 			"size": "M",
 			"type": {
@@ -4603,34 +4821,55 @@
 				{
 					"ac": 14,
 					"from": [
-						"{@item hide armor|phb}"
+						"{@item hide armor|PHB}"
 					]
 				}
 			],
 			"hp": {
-				"formula": "10d8 + 10",
-				"average": 55
+				"average": 67,
+				"formula": "9d8 + 27"
 			},
 			"speed": {
-				"walk": 35
+				"walk": {
+					"number": 35,
+					"condition": "(40 wolf form only)"
+				},
+				"burrow": {
+					"number": 5,
+					"condition": "(fox form only)"
+				},
+				"climb": {
+					"number": 30,
+					"condition": "(goat form only)"
+				},
+				"fly": {
+					"number": 60,
+					"condition": "(owl form only)"
+				}
 			},
-			"str": 11,
-			"dex": 16,
-			"con": 13,
+			"str": 12,
+			"dex": 14,
+			"con": 16,
 			"int": 10,
 			"wis": 19,
-			"cha": 14,
+			"cha": 9,
 			"save": {
-				"wis": "+7",
-				"cha": "+5"
+				"int": "+3",
+				"wis": "+7"
 			},
 			"skill": {
 				"nature": "+3",
 				"perception": "+10",
 				"survival": "+7",
-				"stealth": "+9"
+				"stealth": "+8"
 			},
+			"senses": [
+				"darkvision 60ft."
+			],
 			"passive": 20,
+			"resist": [
+				"cold"
+			],
 			"languages": [
 				"Common",
 				"Druidic",
@@ -4638,29 +4877,29 @@
 			],
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "Spellcasting (Humanoid Form Only)",
 					"headerEntries": [
-						"The druid is a 12th-level Gruul spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It has the following druid spells prepared:"
+						"Naellya is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 15}; {@hit 7} to hit with spell attacks). It has the following druid spells prepared:"
 					],
 					"spells": {
 						"0": {
 							"spells": [
 								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell thorn whip}"
+								"{@spell guidance}",
+								"{@spell produce flame}"
 							]
 						},
 						"1": {
 							"spells": [
 								"{@spell cure wounds}",
-								"{@spell faerie fire}",
-								"{@spell thunderwave}"
+								"{@spell fog cloud}",
+								"{@spell speak with animals}"
 							],
 							"slots": 4
 						},
 						"2": {
 							"spells": [
-								"{@spell flame blade}",
+								"{@spell hold person}",
 								"{@spell moonbeam}",
 								"{@spell pass without trace}"
 							],
@@ -4669,15 +4908,163 @@
 						"3": {
 							"spells": [
 								"{@spell conjure animals}",
-								"{@spell dispel magic}",
-								"{@spell plant growth}"
+								"{@spell sleet storm}",
+								"{@spell wind wall}"
 							],
 							"slots": 3
 						},
 						"4": {
 							"spells": [
-								"{@spell guardian of nature|XGE}",
-								"{@spell wall of fire}"
+								"{@spell ice storm}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell tree stride}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"The naellya has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The naellya can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The naellya has advantage on saving throws against being {@condition charmed}, and magic can't put the naellya to sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The druid magically polymorphs into a beast form—cave bear, fox, giant owl—or back into its humanoid form. Any equipment it is wearing or carrying is absorbed or borne by the beast form (the druid's choice). It reverts to its humanoid form when it dies. The druid's statistics are the same in each form, except where noted in this stat block."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DU",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CD",
+				"F"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"prone"
+			]
+		},
+		{
+			"name": "Carla Lakwell",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"(human)"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 7",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 12,
+			"int": 10,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"con": "+4"
+			},
+			"skill": {
+				"medicine": "+6",
+				"perception": "+6",
+				"religion": "+3"
+			},
+			"passive": 16,
+			"languages": [
+				"Common"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Carla Lakwell is a 5th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). She has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell resistance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell cure wounds}",
+								"{@spell divine favor}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell magic weapon}",
+								"{@spell silence}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell bestow curse}",
+								"{@spell crusader's mantle}",
+								"{@spell spirit guardians}"
 							],
 							"slots": 2
 						}
@@ -4688,34 +5075,313 @@
 			],
 			"trait": [
 				{
-					"name": "Speak with Beasts and Plants",
+					"name": "War Priest",
 					"entries": [
-						"The druid can communicate with beasts and plants as if they shared a language."
+						"When Carla Lakwell uses the Attack action, she can make one weapon attack as a bonus action."
+					]
+				},
+				{
+					"name": "Guided Strike (twice / rest)",
+					"entries": [
+						"When Carla Lakwell makes an attack roll, she can use your Channel Divinity to gain a +10 bonus to the roll."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Quarterstaff",
+					"name": "Longsword",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 4 ({@damage 1d8}) bludgeoning damage if used with two hands."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
 					]
 				}
 			],
-			"tokenUrl": "https://5e.tools/img/GGR/Druid of the Old Ways.png?v=1.110.4",
 			"languageTags": [
-				"C",
-				"DU",
-				"E"
+				"C"
 			],
 			"damageTags": [
-				"B"
+				"S"
 			],
 			"spellcastingTags": [
-				"CD"
+				"CC"
 			],
 			"miscTags": [
 				"MW"
+			]
+		},
+		{
+			"name": "Vanter Halen",
+			"source": "Aradia",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
+			"save": {
+				"con": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"athletics": "+7",
+				"persuasion": "+5"
+			},
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The knight has advantage on saving throws against being {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The knight makes two melee attacks."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 2} to hit, range 100/400 ft., one target. {@h}5 ({@damage 1d10}) piercing damage."
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a Short or Long Rest)",
+					"entries": [
+						"For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a {@dice d4} to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is {@condition incapacitated}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Fey-Touched Troll",
+			"source": "Aradia",
+			"size": "L",
+			"type": "giant",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 30",
+				"average": 63
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 20,
+			"int": 8,
+			"wis": 13,
+			"cha": 12,
+			"save": {
+				"wis": "+4",
+				"str": "+7"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Giant"
+			],
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The troll has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The troll regains 10 hit points at the start of its turn. If the troll takes cold or necrotic damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The troll has advantage on saving throws against being {@condition charmed}, and magic can't put the troll to sleep."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The fey-touched troll has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troll makes two attacks: one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage and the target must succeed on a {@dc 15} Wisdom saving throw or be {@condition poisoned} for 1 minute."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Fey Step {@recharge 4}",
+					"entries": [
+						"The troll magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the troll can make one claw attack."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"forest",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark"
+			],
+			"fluff": {
+				"name": "Troll",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Born with horrific appetites, trolls eat anything they can catch and devour. They have no society to speak of, but they do serve as mercenaries to orcs, ogres, ettins, hags, and giants. As payment, trolls demand food and treasure. Trolls are difficult to control, however, doing as they please even when working with more powerful creatures.",
+									{
+										"name": "Regeneration",
+										"type": "entries",
+										"entries": [
+											"Smashing a troll's bones and slashing through its rubbery hide only makes it angry. A troll's wounds close quickly. If the monster loses an arm, a leg, or even its head, those dismembered parts can sometimes act with a life of their own. A troll can even reattach severed body parts, untroubled by its momentary disability. Only acid and fire can arrest the regenerative properties of a troll's flesh. The trolls, enraged, will attack individuals making acid and fire attacks against them above all other prey."
+										]
+									},
+									{
+										"name": "Troll Freaks",
+										"type": "entries",
+										"entries": [
+											"Their regenerative capabilities make trolls especially susceptible to mutation. Although uncommon, such transformations can result from what the troll has done or what has been done to it. A decapitated troll might grow two heads from the stump of its neck, while a troll that eats a fey creature might gain one or more of that creature's traits."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Troll.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Troll.png?v=1.112.4",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/troll.mp3?v=1.112.4"
+			},
+			"traitTags": [
+				"Fey Ancestry",
+				"Keen Senses",
+				"Magic Resistance",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
 			]
 		}
 	]
